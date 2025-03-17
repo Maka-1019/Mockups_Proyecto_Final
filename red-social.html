@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social - MochilaTrips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets/logomochila.jpg" alt="Logo de MochilaTrips" class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="plan-viaje.html">Planes</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="red-social.html">Red Social</a></li>
+                <li><a href="usuario.html">Perfil</a></li>
+                <li><a href="index.html" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección para Crear Publicaciones -->
+    <section class="crear-publicacion">
+        <h2>Comparte tu experiencia</h2>
+        <form id="form-publicacion">
+            <textarea id="texto-publicacion" placeholder="Escribe sobre tu viaje..." required></textarea>
+            <input type="file" id="imagen-publicacion" accept="image/*">
+            <button type="submit" class="btn">Publicar</button>
+        </form>
+    </section>
+
+    <!-- Feed de Publicaciones -->
+    <section class="feed-publicaciones">
+        <h2>Publicaciones Recientes</h2>
+        <div id="lista-publicaciones">
+            <!-- Aquí se mostrarán las publicaciones -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MochilaTrips - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
